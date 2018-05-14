@@ -1,0 +1,17 @@
+@import "reset";
+@import "variables";
+
+
+@import "header";
+@import "footer";
+@import "main";
+
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+   background-color: $background-color;
+}
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,600');

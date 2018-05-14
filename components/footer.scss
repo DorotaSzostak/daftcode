@@ -1,0 +1,103 @@
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    font-weight: 600;
+    .footer__social {
+        text-transform: uppercase;
+        margin-bottom: 90px;
+        padding: 10px 0;
+        .footer__social--item {
+            color:$white;
+            padding: 0 50px;
+        }
+    }
+    .footer__more {
+        position: relative;
+        width: 0; 
+        height: 0; 
+        border-bottom: 70px solid $white;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        .footer__more--link{
+            position: absolute;
+            top: 35px;
+            left: -20px;
+            text-transform: uppercase;
+            color: $black;
+            font-size: 14px;
+        }
+        .footer__more--mobile{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        font-size: 14px;
+        .footer__text{
+                margin-bottom: 30px;
+            }
+        .footer__social {
+            margin-bottom: 10px;
+            .footer__social--item {
+            padding: 0 20px;
+                .main__icon--item{
+                    margin-right: 5px;
+                }
+        }
+        }
+        .footer__more {
+        border-bottom: 56px solid $white;
+        border-left: 56px solid transparent;
+        border-right: 56px solid transparent;
+            .footer__more--link{
+                font-size: 12px;
+                top: 25px;
+                left: -18px;
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        font-size: 12px;
+        width: 80%;
+        text-align: center;
+        .footer__text{
+                margin-bottom: 10px;
+                line-height: 150%;
+            }
+        .footer__social {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            .footer__social--item {
+            align-self: center;
+            padding: 10px 0;
+                  .main__icon--item{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+        .footer__more {
+        border-bottom: 35px solid $white;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+            .footer__more--link{
+                display: none;
+            }
+            .footer__more--mobile {
+                display: block;
+                position: absolute;
+                font-size: 24px;
+                font-weight: 200;
+                color: $black;
+                left: -5px;
+                bottom: -35px;
+            }
+        }
+    }
+}
