@@ -1,0 +1,50 @@
+ .more {
+        position: relative;
+        width: 0; 
+        height: 0; 
+        border-bottom: 70px solid $white;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        .more--link{
+            position: absolute;
+            top: 35px;
+            left: -20px;
+            text-transform: uppercase;
+            color: $black;
+            font-size: 14px;
+        }
+        .more--mobile{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        .more {
+        border-bottom: 56px solid $white;
+        border-left: 56px solid transparent;
+        border-right: 56px solid transparent;
+            .more--link{
+                font-size: 12px;
+                top: 25px;
+                left: -18px;
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .more {
+        border-bottom: 35px solid $white;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+            .more--link{
+                display: none;
+            }
+            .more--mobile {
+                display: block;
+                position: absolute;
+                font-size: 24px;
+                font-weight: 200;
+                color: $black;
+                left: -5px;
+                bottom: -35px;
+            }
+        }
+    }
